@@ -1,0 +1,150 @@
+{
+  "archinstall-language": "English",
+  "audio_config": {
+    "audio": "pipewire"
+  },
+  "bootloader": "Systemd-boot",
+  "custom_commands": [],
+  "disk_config": {
+    "btrfs_options": {
+      "snapshot_config": null
+    },
+    "config_type": "default_layout",
+    "device_modifications": [
+      {
+        "device": "/dev/sda",
+        "partitions": [
+          {
+            "btrfs": [],
+            "dev_path": null,
+            "flags": ["boot", "esp"],
+            "fs_type": "fat32",
+            "mount_options": [],
+            "mountpoint": "/boot",
+            "obj_id": "e8d6ba74-4247-4b34-b5ec-4570cdbfe254",
+            "size": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "GiB",
+              "value": 1
+            },
+            "start": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "MiB",
+              "value": 1
+            },
+            "status": "create",
+            "type": "primary"
+          },
+          {
+            "btrfs": [],
+            "dev_path": null,
+            "flags": [],
+            "fs_type": "ext4",
+            "mount_options": [],
+            "mountpoint": "/",
+            "obj_id": "4a32f467-88a9-4805-b371-25722debe7d5",
+            "size": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "B",
+              "value": 499031998464
+            },
+            "start": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "B",
+              "value": 1074790400
+            },
+            "status": "create",
+            "type": "primary"
+          }
+        ],
+        "wipe": true
+      }
+    ]
+  },
+  "hostname": "archlinux",
+  "kernels": ["linux"],
+  "locale_config": {
+    "kb_layout": "us",
+    "sys_enc": "UTF-8",
+    "sys_lang": "en_US.UTF-8"
+  },
+  "mirror_config": {
+    "custom_repositories": [],
+    "custom_servers": [],
+    "mirror_regions": {
+      "Canada": [
+        "http://mirror.csclub.uwaterloo.ca/archlinux/$repo/os/$arch",
+        "https://mirror.csclub.uwaterloo.ca/archlinux/$repo/os/$arch",
+        "http://mirror.its.dal.ca/archlinux/$repo/os/$arch",
+        "http://archlinux.mirror.rafal.ca/$repo/os/$arch",
+        "http://muug.ca/mirror/archlinux/$repo/os/$arch",
+        "https://muug.ca/mirror/archlinux/$repo/os/$arch",
+        "http://ca.mirrors.cicku.me/archlinux/$repo/os/$arch",
+        "https://ca.mirrors.cicku.me/archlinux/$repo/os/$arch",
+        "http://mirror.scd31.com/arch/$repo/os/$arch",
+        "https://mirror.scd31.com/arch/$repo/os/$arch",
+        "http://mirror2.evolution-host.com/archlinux/$repo/os/$arch",
+        "https://mirror2.evolution-host.com/archlinux/$repo/os/$arch",
+        "http://mirror.0xem.ma/arch/$repo/os/$arch",
+        "https://mirror.0xem.ma/arch/$repo/os/$arch",
+        "http://mirror.xenyth.net/archlinux/$repo/os/$arch",
+        "https://mirror.xenyth.net/archlinux/$repo/os/$arch",
+        "https://arch.mirror.winslow.cloud/$repo/os/$arch",
+        "http://mirror.quantum5.ca/archlinux/$repo/os/$arch",
+        "https://mirror.quantum5.ca/archlinux/$repo/os/$arch",
+        "https://mirror.franscorack.com/archlinux/$repo/os/$arch",
+        "http://mirror.cpsc.ucalgary.ca/mirror/archlinux.org/$repo/os/$arch",
+        "https://mirror.cpsc.ucalgary.ca/mirror/archlinux.org/$repo/os/$arch",
+        "http://mirrors.pablonara.com/archlinux/$repo/os/$arch",
+        "https://mirrors.pablonara.com/archlinux/$repo/os/$arch",
+        "https://upstream-1.pablonara.com/archlinux/$repo/os/$arch",
+        "https://mirror.acadielinux.ca/mirror/arch/$repo/os/$arch"
+      ]
+    },
+    "optional_repositories": []
+  },
+  "network_config": {
+    "type": "nm"
+  },
+  "ntp": true,
+  "packages": [
+    "base-devel",
+    "ghostty",
+    "git",
+    "helix",
+    "hyprland",
+    "hyprpaper",
+    "ly",
+    "mesa",
+    "rofi",
+    "ttf-firacode-nerd",
+    "vulkan-radeon",
+    "waybar"
+  ],
+  "parallel_downloads": 0,
+  "profile_config": {
+    "gfx_driver": null,
+    "greeter": null,
+    "profile": {
+      "custom_settings": {},
+      "details": [],
+      "main": "Minimal"
+    }
+  },
+  "services": [],
+  "swap": true,
+  "timezone": "US/Pacific",
+  "version": null
+}
