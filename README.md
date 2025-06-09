@@ -1,6 +1,3 @@
 # Bare Bones Hyprland
 bare bones install of hyprland, run:  
-``
-curl -LO https://your-domain.com/autoarch.sh
-chmod +x autoarch.sh
-./autoarch.sh
+`curl -sL https://raw.githubusercontent.com/mirror-shades/bbh.yml | archinstall --config -`
